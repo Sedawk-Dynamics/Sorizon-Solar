@@ -14,6 +14,7 @@ const quickLinks = [
   { name: 'Residential', href: '/residential' },
   { name: 'Commercial', href: '/commercial' },
   { name: 'Industrial', href: '/industrial' },
+  { name: 'Projects', href: '/projects' },
   { name: 'Solar Calculator', href: '/#calculator' },
   { name: 'Contact', href: '/contact' },
 ]

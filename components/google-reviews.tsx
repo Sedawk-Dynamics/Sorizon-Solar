@@ -24,7 +24,7 @@ export function GoogleReviews() {
   const { rating, count, reviewsUrl } = siteConfig.google
 
   return (
-    <section className="py-20 md:py-28 bg-white">
+    <section id="reviews" className="py-20 md:py-28 bg-white scroll-mt-24">
       <div className="container mx-auto px-6 lg:px-12">
         {/* Header */}
         <div className="text-center mb-14">

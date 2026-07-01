@@ -24,6 +24,7 @@ const menuLinks = [
   { name: 'O&M / Cleaning', href: '/solar-maintenance' },
   { name: 'Net Metering', href: '/net-metering' },
   { name: 'Subsidy', href: '/solar-subsidy' },
+  { name: 'Projects', href: '/projects' },
   { name: 'Contact', href: '/contact' },
 ]
 
