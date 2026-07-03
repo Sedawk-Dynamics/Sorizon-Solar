@@ -9,12 +9,17 @@ import Link from 'next/link'
 
 const services = [
   {
-    title: 'House',
+    title: 'Residential',
     image: '/images/house-solar.jpg',
     href: '/residential',
   },
   {
-    title: 'Commercial facilities',
+    title: 'Industrial',
+    image: '/images/hero-bg.jpg',
+    href: '/industrial',
+  },
+  {
+    title: 'Commercial',
     image: '/images/commercial-field.jpg',
     href: '/commercial',
   },
@@ -48,7 +53,7 @@ export function SolarBoostServices() {
         </motion.h2>
 
         {/* Service Cards */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <motion.div
               key={service.title}

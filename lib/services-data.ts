@@ -21,14 +21,14 @@ export const services: Service[] = [
     title: 'Residential Rooftop Solar',
     tagline: 'Cut your home electricity bills by up to 90% with a rooftop solar system.',
     metaDescription:
-      'Residential rooftop solar installation in Surat & Gujarat. Cut home electricity bills, claim PM Surya Ghar subsidy, and enjoy a 25-year panel warranty.',
+      'Residential rooftop solar installation in Surat & Gujarat. Cut home electricity bills, claim PM Surya Ghar subsidy, and enjoy a 30-year panel warranty.',
     kicker: 'For Homes',
     intro:
       'A rooftop solar system turns your roof into a power plant, protecting your family from rising electricity tariffs for the next 25 years. Our Surat team handles everything — site survey, design, subsidy paperwork, installation and net-metering — so you start saving from day one.',
     benefits: [
       { title: 'Lower Bills', description: 'Offset most of your monthly consumption and slash your electricity bill.' },
       { title: 'Govt. Subsidy', description: 'We handle your PM Surya Ghar (Muft Bijli Yojana) subsidy application end-to-end.' },
-      { title: '25-Year Warranty', description: 'Tier-1 panels backed by a 25-year performance warranty.' },
+      { title: '30-Year Warranty', description: 'Tier-1 panels backed by a 30-year performance warranty.' },
       { title: 'Adds Home Value', description: 'A solar-powered home is a more valuable, future-ready asset.' },
     ],
     process: [

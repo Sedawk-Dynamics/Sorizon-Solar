@@ -3,6 +3,7 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { Button } from '@/components/ui/button'
+import { siteConfig, whatsappHref } from '@/lib/site-config'
 
 export function SolarBoostCTA() {
   const ref = useRef(null)
@@ -26,10 +27,19 @@ export function SolarBoostCTA() {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <Button
+            asChild
             size="lg"
             className="bg-blue-500 hover:bg-blue-600 text-white px-12 py-8 text-xl rounded-lg shadow-xl"
           >
-            {"Yes! Let's do it"}
+            <a
+              href={whatsappHref(
+                `Hi ${siteConfig.name}, yes — I'd like to go solar. Please contact me.`
+              )}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {"Yes! Let's do it"}
+            </a>
           </Button>
         </motion.div>
 

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Phone, Mail, MapPin, MessageCircle } from 'lucide-react'
+import { Phone, Mail, MessageCircle } from 'lucide-react'
 import { SolarBoostNav } from '@/components/solarboost-nav'
 import { SolarBoostFooter } from '@/components/solarboost-footer'
 import { LeadForm } from '@/components/shared/lead-form'
@@ -77,20 +77,6 @@ export default function ContactPage() {
                 </div>
               </a>
 
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-2xl bg-gray-100 flex items-center justify-center shrink-0">
-                  <MapPin className="w-6 h-6 text-gray-600" />
-                </div>
-                <div>
-                  <p className="text-sm text-gray-500">Service areas</p>
-                  <p className="text-lg font-semibold text-gray-900">
-                    {siteConfig.coverage.label}
-                  </p>
-                  <p className="text-sm text-gray-500 mt-1">
-                    {siteConfig.coverage.areas.join(' · ')}
-                  </p>
-                </div>
-              </div>
             </div>
 
             {/* Lead form */}

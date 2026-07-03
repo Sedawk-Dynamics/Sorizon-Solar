@@ -4,6 +4,7 @@ import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
+import Link from 'next/link'
 
 const stats = [
   { value: '15+', label: 'years of work' },
@@ -35,11 +36,11 @@ export function SolarBoostAbout() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-4xl md:text-5xl lg:text-6xl font-normal text-gray-900 mb-20 max-w-5xl leading-tight"
         >
-          Our company is dedicated to harnessing the power of the sun to provide sustainable and eco-friendly energy solutions
+          We help Gujarat homes and businesses cut their power bills with rooftop solar that pays for itself.
         </motion.h2>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-20 lg:gap-24 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 md:gap-12 mb-16">
           {stats.map((stat, index) => (
             <motion.div
               key={stat.label}
@@ -48,7 +49,7 @@ export function SolarBoostAbout() {
               transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
               className="flex flex-col items-start"
             >
-              <div className="text-7xl md:text-8xl lg:text-9xl font-normal text-blue-500 mb-2 leading-none">
+              <div className="text-6xl md:text-7xl font-normal text-blue-500 mb-2 leading-none tabular-nums">
                 {stat.value}
               </div>
               <div className="text-lg md:text-xl text-gray-400 font-light">
@@ -65,12 +66,15 @@ export function SolarBoostAbout() {
           transition={{ duration: 0.6, delay: 0.5 }}
         >
           <Button
+            asChild
             variant="outline"
             size="lg"
             className="border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-8 py-6 rounded-lg bg-transparent"
           >
-            More About Us
-            <ArrowRight className="ml-2 w-5 h-5" />
+            <Link href="/projects">
+              More About Us
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </Link>
           </Button>
         </motion.div>
       </div>

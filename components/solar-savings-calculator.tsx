@@ -9,7 +9,6 @@ import { siteConfig, whatsappHref } from '@/lib/site-config'
 
 export function SolarSavingsCalculator() {
   const [monthlyBill, setMonthlyBill] = useState(3000)
-  const [roofArea, setRoofArea] = useState(500)
   const [name, setName] = useState('')
   const [mobile, setMobile] = useState('')
   const [error, setError] = useState('')
@@ -36,19 +35,16 @@ export function SolarSavingsCalculator() {
       `Name: ${name.trim()}`,
       `Mobile: ${cleanMobile}`,
       `Monthly bill: ₹${monthlyBill}`,
-      `Roof area: ${roofArea} sq ft`,
-      `Estimated system: ${results.systemSize} kW`,
+      `Recommended system: ${results.systemSize} kW`,
       `Estimated annual savings: ₹${results.annualSavings}`,
     ].join('\n')
     window.open(whatsappHref(message), '_blank', 'noopener,noreferrer')
   }
 
   useEffect(() => {
-    // Calculate system size based on monthly bill and roof area (India/Gujarat)
-    // Rough calc: 1 kW offsets ~₹1000/month of bill, limited by roof area
-    const billBasedSize = monthlyBill / 1000
-    const areaBasedSize = roofArea / 100 // Assuming ~100 sq ft per kW
-    const systemSize = Math.min(billBasedSize, areaBasedSize)
+    // Recommended system size from the monthly bill (India/Gujarat)
+    // Rough calc: 1 kW offsets ~₹1000/month of bill
+    const systemSize = monthlyBill / 1000
 
     // Annual savings: ~1500 kWh per kW per year in Gujarat, tariff ~₹8/kWh
     const annualSavings = systemSize * 1500 * 8
@@ -66,7 +62,7 @@ export function SolarSavingsCalculator() {
       paybackPeriod: Math.round(paybackPeriod * 10) / 10,
       co2Reduction: Math.round(co2Reduction * 10) / 10,
     })
-  }, [monthlyBill, roofArea])
+  }, [monthlyBill])
 
   return (
     <section id="calculator" className="py-20 md:py-32 bg-gradient-to-b from-gray-50 to-white">
@@ -132,31 +128,6 @@ export function SolarSavingsCalculator() {
                 min="0"
                 max="20000"
                 step="500"
-                className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-5 [&::-webkit-slider-thumb]:h-5 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-orange-600 [&::-webkit-slider-thumb]:cursor-pointer"
-              />
-            </div>
-
-            {/* Roof Area Input */}
-            <div className="mb-8">
-              <label className="block text-base font-medium text-gray-900 mb-4">
-                Available Roof Area (sq ft)
-              </label>
-              <div className="relative mb-4">
-                <input
-                  type="number"
-                  value={roofArea}
-                  onChange={(e) => setRoofArea(Number(e.target.value))}
-                  className="w-full px-4 py-4 text-lg border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
-                  min="0"
-                  max="2000"
-                />
-              </div>
-              <input
-                type="range"
-                value={roofArea}
-                onChange={(e) => setRoofArea(Number(e.target.value))}
-                min="0"
-                max="2000"
                 className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-5 [&::-webkit-slider-thumb]:h-5 [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-orange-600 [&::-webkit-slider-thumb]:cursor-pointer"
               />
             </div>

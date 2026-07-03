@@ -1,9 +1,8 @@
 'use client'
 
-import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Facebook, Instagram, Linkedin, Twitter, Send, MapPin, Mail, Phone } from 'lucide-react'
+import { Facebook, Instagram, Linkedin, Twitter, Send, Mail, Phone } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { siteConfig, whatsappHref, telHref, mailHref } from '@/lib/site-config'
 import { seoPages } from '@/lib/seo-pages-data'
@@ -42,10 +41,6 @@ export function SolarBoostFooter() {
               Empowering homes and businesses to harness the power of the sun.
             </p>
             <div className="space-y-3">
-              <div className="flex items-center gap-3 text-white/50 text-sm">
-                <MapPin className="w-5 h-5 shrink-0" />
-                <span>Serving {siteConfig.coverage.label}</span>
-              </div>
               <a
                 href={mailHref('Solar enquiry')}
                 className="flex items-center gap-3 text-white/50 hover:text-white text-sm transition-colors"
@@ -60,21 +55,6 @@ export function SolarBoostFooter() {
                 <Phone className="w-5 h-5 shrink-0" />
                 <span>{siteConfig.phone}</span>
               </a>
-            </div>
-
-            {/* Service Areas */}
-            <div className="mt-8">
-              <h4 className="text-white/80 font-medium text-sm mb-3">Service Areas</h4>
-              <div className="flex flex-wrap gap-2">
-                {siteConfig.coverage.areas.map((area) => (
-                  <span
-                    key={area}
-                    className="text-xs text-white/50 border border-white/10 rounded-full px-3 py-1"
-                  >
-                    {area}
-                  </span>
-                ))}
-              </div>
             </div>
           </div>
 
@@ -140,29 +120,6 @@ export function SolarBoostFooter() {
             ))}
           </div>
         </div>
-
-        {/* Large Logo Text */}
-<div className="mb-32 overflow-hidden">
-  <motion.div
-    initial={{ opacity: 0, y: 40 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 1.1, ease: 'easeOut' }}
-    viewport={{ once: true }}
-    className="
-      text-[8rem] 
-      md:text-[12rem] 
-      lg:text-[16rem] 
-      xl:text-[20rem] 
-      font-bold 
-      leading-none 
-      text-white/10 
-      select-none
-    "
-  >
-    Sorizon
-  </motion.div>
-</div>
-
 
         {/* Bottom Section */}
         <div className="border-t border-white/10 pt-10 grid md:grid-cols-3 gap-8 items-center">

@@ -165,10 +165,6 @@ export function SolarBoostNav() {
             {/* Contact */}
             <div className="border-t pt-8 space-y-6 text-sm">
               <div>
-                <p className="text-gray-400">Service Areas:</p>
-                <p className="text-gray-700">{siteConfig.coverage.label}</p>
-              </div>
-              <div>
                 <p className="text-gray-400">Phone:</p>
                 <p className="text-gray-700">{siteConfig.phone}</p>
               </div>

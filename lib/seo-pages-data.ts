@@ -28,7 +28,7 @@ export const seoPages: SeoPage[] = [
     h1: 'Solar Company in Surat',
     metaTitle: 'Best Solar Company in Surat | Rooftop Solar Installation | Sorizon Solar',
     metaDescription:
-      'Looking for a trusted solar company in Surat? Sorizon Solar offers rooftop solar installation for homes, businesses and industries with subsidy support and 25-year warranty.',
+      'Looking for a trusted solar company in Surat? Sorizon Solar offers rooftop solar installation for homes, businesses and industries with subsidy support and 30-year warranty.',
     kicker: 'Surat, Gujarat',
     intro:
       'Sorizon Solar is a rooftop solar EPC company based in Surat, helping homes, shops, offices and factories across the city switch to clean, affordable solar energy. From a free site survey to subsidy paperwork and net metering, we handle the entire journey.',
@@ -56,7 +56,7 @@ export const seoPages: SeoPage[] = [
       { type: 'h2', text: 'Why choose Sorizon Solar' },
       {
         type: 'p',
-        text: 'We are a local Surat team offering end-to-end service — transparent quotes, tier-1 panels with a 25-year performance warranty, and complete handling of subsidy and DISCOM paperwork so you start saving without the hassle.',
+        text: 'We are a local Surat team offering end-to-end service — transparent quotes, tier-1 panels with a 30-year performance warranty, and complete handling of subsidy and DISCOM paperwork so you start saving without the hassle.',
       },
     ],
     faqs: [
@@ -83,7 +83,7 @@ export const seoPages: SeoPage[] = [
           'High solar irradiation — roughly 1,500 units generated per kW per year.',
           'Central subsidy for residential systems under PM Surya Ghar.',
           'Net metering lets you earn credit for surplus power exported to the grid.',
-          '25-year panel life means decades of low-cost electricity.',
+          '30-year panel life means decades of low-cost electricity.',
         ],
       },
       { type: 'h2', text: 'How much does rooftop solar cost in Gujarat?' },

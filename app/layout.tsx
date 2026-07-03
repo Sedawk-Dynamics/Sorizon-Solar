@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Sorizon Solar Solutions - Clean Energy for Your Home & Business",
     description:
-      "Professional solar installations with 25-year warranty. Get instant savings estimate with our solar calculator.",
+      "Professional solar installations with 30-year warranty. Get instant savings estimate with our solar calculator.",
     creator: "@SorizionSolar",
     images: ["https://sorizonsolar.com/images/hero-bg.jpg"],
   },

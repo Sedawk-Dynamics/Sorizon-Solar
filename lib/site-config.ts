@@ -1,17 +1,16 @@
 // Central source of truth for business contact details & info.
 //
-// TODO(sorizon): The phone/WhatsApp number below is a PLACEHOLDER that matches
-// the one currently used across the site. Replace it with the REAL business
-// number before going live — every "Get Quote" / site-visit CTA opens a
-// WhatsApp chat to `whatsapp` and every call button dials `phone`.
+// Real business number confirmed by the client (Prince Radadiya): +91 84015 74675.
+// Every "Get Quote" / site-visit CTA opens a WhatsApp chat to `whatsapp` and
+// every call button dials `phone`.
 export const siteConfig = {
   name: 'Sorizon Solar Solutions',
 
   // Human-readable phone number (used for display + tel: link)
-  phone: '+91 98765 43210',
+  phone: '+91 84015 74675',
 
   // WhatsApp number in international format — DIGITS ONLY (no +, spaces or dashes)
-  whatsapp: '919876543210',
+  whatsapp: '918401574675',
 
   email: 'info@sorizonsolar.com',
 
@@ -38,10 +37,10 @@ export const siteConfig = {
     'Free Site Survey',
     'Subsidy Guidance',
     'Professional Installation',
-    '25-Year Panel Warranty',
+    '30-Year Panel Warranty',
   ],
 
-  offering: 'Residential · Commercial · Industrial Solar EPC',
+  offering: 'Turning Sunshine Into Savings',
 
   // Google Business profile.
   // TODO(sorizon): Replace `reviewsUrl` with your real Google Business/Maps

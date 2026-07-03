@@ -55,7 +55,7 @@ export function SchemaMarkup() {
     award: [
       'ISO 9001 Certified',
       'Licensed & Insured',
-      '25-Year Warranty Provider',
+      '30-Year Warranty Provider',
     ],
   }
 
